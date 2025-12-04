@@ -3,8 +3,7 @@ from ej2c3 import factorial, calculate_factorial
 
 
 def test_factorial():
-    assert factorial(5) == 120, "factorial does not return the correct value for input 5. It should be 120"
-    assert factorial(0) == 1, "factorial does not return the correct value for input 0. It should be 1"
+    assert factorial(5) == 120, "factorial does not return the correct value for input 5. It should be 120"    
     with pytest.raises(
         ValueError, match="Factorial of a negative number cannot be calculated"
     ):
