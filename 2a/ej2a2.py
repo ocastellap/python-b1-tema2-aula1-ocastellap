@@ -64,16 +64,21 @@ Sortida:
 95.0
 """
 
-
 def tax_calculation_group_1(value: int):
     # Write here your code
+    tax_percent = 19
+    impost_value = (tax_percent * value)/100
+
+    return impost_value
     pass
 
 
 def tax_calculation_global(value: int):
     # Write here your code
-    pass
+    tax_percent = 24
+    impost_value = (tax_percent * value)/100
 
+    return impost_value
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
