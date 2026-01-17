@@ -88,20 +88,37 @@ Exemple:
 
 """
 
-
 def add_student_by_value(list_students, new_student):
     # Write here your code
+    list_by_value = list_students.copy()
+    list_by_value.append(new_student)
+    
+    return list_by_value
     pass
 
 
 def add_student_by_reference(list_students, new_student):
     # Write here your code
+    list_students.append(new_student)
+
+    return list_students
+    
     pass
 
 
 def main(list_students, new_student_by_value, new_student_by_reference):
     # Write here your code
-    pass
+    print("Original student list", list_students)
+
+    list_value = add_student_by_value(list_students, new_student_by_value)
+    print("Student list by value", list_value)
+
+    list_ref = add_student_by_reference(list_students, new_student_by_reference)
+    print("Student list by reference", list_ref)
+
+    print("Original student list", list_students)
+
+    return list_students
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
